@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.myntra.com</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/png" href="/Common Files/image/favicon.png">
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="/CommonFiles/style.css">
+    <link rel="stylesheet" href="boards.css">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <!-- FONT-AWESOME -->
+    <script src="https://kit.fontawesome.com/72215895a8.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f8f8f8;
+        }
+        h2 {
+            font-size: 150%;
+            padding: 50px;
+            margin: 0;
+        }
+        section {
+            background-color: white;
+            margin: 1em auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .gallery {
+            padding: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+            justify-content: center;
+        }
+        .gallery-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            width: calc(33% - 1em);
+            margin-bottom: 1em;
+            padding: 1em;
+            text-align: center;
+        }
+        .gallery-item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .gallery-item p {
+            margin: 0.5em 0;
+            font-size: 1em;
+            color: #333;
+        }
+        .like-button {
+            background-color: #ab131d;
+            color: white;
+            border: none;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .like-button:hover {
+            background-color: #a21c1f;
+        }
+        .like-count {
+            margin-left: 0.5em;
+            font-weight: bold;
+        }
+        .container {
+            width: 1000px;
+            display: flex;
+            justify-content: space-between;
+            padding: 100px;
+        }
+        .section {
+            width: 48%;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background-color: white;
+        }
+        .banner {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffeb3b;
+            color: #333;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER MENU SECTION -->
+    <header>
+        <div id="logo">
+            <img src="/CommonFiles/image/myntra-removebg-preview.png" alt="Myntra Logo" id="landingPage" onclick="redirectToLandingPage()">
+        </div>
+
+        <ul id="nav_bar">
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Categories</a>
+                <div class="dropdown-content">
+                    <a href="../Homepages/menHomePage.html">Men</a>
+                    <a href="../Homepages/womenHomePage.html">Women</a>
+                    <a href="#">Kids</a>
+                    <a href="../Homepages/homeLiving.html">Home & Living</a>
+                    <a href="#">Beauty</a>
+                    <a href="#">Studio</a>
+                </div>
+            </li>
+            <li id="studio"><a href="../Hackerramp/LookBooks.html">Lookbooks</a><span>new</span></li>
+            <li id="studio"><a href="../Hackerramp/CommunityPage.html">StyleShows</a><span>new</span></li>
+            <li id="studio" class="dropdown">
+                <a href="../Hackerramp/donation.html" class="dropbtn">Donations</a><span>new</span>
+                <div class="dropdown-content">
+                    <a href="../Hackerramp/Upcycle.html">Upstyle</a>
+                    <a href="../Hackerramp/Recycle.html">Recycle</a>
+                </div>
+            </li>
+        </ul>
+        <div id="search">
+            <input type="text" id="search_bar" placeholder="Search for products">
+            <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+        </div>
+        <div id="right_icon">
+            <div id="reggDropdown">
+                <div id="drop">
+                    <a href="/myntra-master/Hackerramp/profile_boards.html" class="dropList">Community</a>
+                    <a href="/Profile/profile.html" class="dropList">login</a>
+                    <a href="/Profile/signup.html" class="dropList">sign up</a>
+                </div>
+                <i class="fa-regular fa-user"></i>
+                <span>profile</span>
+            </div>
+            <div>
+                <i class="fa-regular fa-heart"></i>
+                <span>wishlist</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>bag</span>
+            </div>
+        </div>
+        <div id="toggle">
+            <i class='bx bx-menu dropbtn' onclick="myFunction()"></i>
+            <div id="myDropdown" class="dropdown-content">
+                <div class="top">
+                    <a href="../Homepages/menHomePage.html">men</a>
+                    <a href="../Homepages/womenHomePage.html">women</a>
+                    <a href="#">kids</a>
+                    <a href="../Homepages/homeLiving.html">home & living</a>
+                    <a href="#">beauty</a>
+                    <a href="#">studio</a>
+                </div>
+                <div class="bottom">
+                    <i class="fa-regular fa-user fa_user" id="profile"></i>
+                    <i class="fa-regular fa-heart fa_wishlist"></i>
+                    <i class="fa fa-users"></i>
+                    <i class="fa-solid fa-bag-shopping fa_cart"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="section">
+            <h2>Fashion Boards Contests</h2>
+            <p>Share your style inspirations and get featured on our fashion boards. Showcase your unique fashion sense and inspire others.</p>
+            <section>
+                <div class="grid">
+                    <div class="card"><img src="f1.jpeg">
+                    <button class="like-button">Like <span class="like-count">10k</span></button> <small>@Jimmy</small><br>College Fit</div>
+                    <div class="card"><img src="f2.jpg">
+                    <button class="like-button">Like <span class="like-count">11k</span></button> <small>@Tata</small><br>Feelin It!</div>
+
+
+                </div>
+            </section>
+        </div>
+        <div class="section">
+            <h2>Eco-Friendly Contest</h2>
+            <p>Join our contest and show us how you can style out-of-trend clothes in a trendy way. Stand a chance to win exciting prizes and get featured on our platform.</p>
+            <section>
+                <div class="grid">
+                    <div class="card"><img src="e1.jpeg">
+                    <button class="like-button">Like <span class="like-count">20k</span></button> <small>@Karry</small><br>White Skinny Jeans are Dope!</div>
+                    <div class="card"><img src="e2.jpeg">
+                    <button class="like-button">Like <span class="like-count">15k</span></button> <small>@Karina</small><br>Ribbed Skinny Fit</div>
+
+
+                </div>
+            </section>
+        </div>
+    </section>
+    <section class="banner">
+        <h2>Result Declaration!</h2>
+        <p>The results for our latest contest are out. Check out the winners and their amazing styles on our contest page.</p>
+    </section>
+    
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="footerContainer">
+            <div class="footer-first">
+                <div class="footer-row">
+                    <ul>
+                        <h3>ONLINE SHOPPING</h3>
+                        <li><a href="">Men</a></li>
+                        <li><a href="">Women</a></li>
+                        <li><a href="">Kids</a></li>
+                        <li><a href="">Home & Living</a></li>
+                        <li><a href="">Beauty</a></li>
+                        <li><a href="">Gift Cards</a></li>
+                        <li><a href="">Myntra Insider</a></li>
+                    </ul>
+                    <ul>
+                        <h3>USEFUL LINKS</h3>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Site Map</a></li>
+                        <li><a href="">Corporate Information</a></li>
+                        <li><a href="">Whitehat</a></li>
+                    </ul>
+                    <ul>
+                        <h3>CUSTOMER POLICIES</h3>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">T&C</a></li>
+                        <li><a href="">Terms Of Use</a></li>
+                        <li><a href="">Track Orders</a></li>
+                        <li><a href="">Shipping</a></li>
+                        <li><a href="">Cancellation</a></li>
+                        <li><a href="">Returns</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Grievance Officer</a></li>
+                    </ul>
+                    <ul>
+                        <h3>SUBSCRIBE</h3>
+                        <input type="text" placeholder="Your Email Address">
+                        <button class="subscribeButton">SUBSCRIBE</button>
+                    </ul>
+                    <ul>
+                        <h3>EXPERIENCE MYNTRA APP ON MOBILE</h3>
+                        <div class="footer-images">
+                            <a href="https://play.google.com/store/apps/details?id=com.myntra.android&hl=en_IN&gl=US">
+                                <img src="/CommonFiles/image/google_play.png" alt="">
+                            </a>
+                            <a href="https://apps.apple.com/in/app/myntra-fashion-shopping-app/id907394059">
+                                <img src="/CommonFiles/image/apple_store.png" alt="">
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="footerImages">
+                    <img src="/CommonFiles/image/original.png" alt="">
+                    <div>
+                        <h4>100% ORIGINAL</h4>
+                        <p>guarantee for all products at myntra.com</p>
+                    </div>
+                </div>
+                <div class="footerImages">
+                    <img src="/CommonFiles/image/return.png" alt="">
+                    <div>
+                        <h4>Return within 30 days</h4>
+                        <p>of receiving your order</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-second">
+                <div class="footer-second-container">
+                    <div class="social">
+                        <h3>KEEP IN TOUCH</h3>
+                        <a href="https://www.facebook.com/myntra">
+                            <img src="/CommonFiles/image/facebook.png" alt="facebook">
+                        </a>
+                        <a href="https://www.instagram.com/myntra/">
+                            <img src="/CommonFiles/image/instagram.png" alt="instagram">
+                        </a>
+                        <a href="https://www.youtube.com/user/myntradotcom">
+                            <img src="/CommonFiles/image/youtube.png" alt="youtube">
+                        </a>
+                        <a href="https://twitter.com/myntra">
+                            <img src="/CommonFiles/image/twitter.png" alt="twitter">
+                        </a>
+                    </div>
+                    <div>
+                        <a href=""><img src="/CommonFiles/image/payment.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    function redirectToLandingPage() {
+    window.location.href = "../Landingpage/index.html";
+}
+
+</script>
+</html>

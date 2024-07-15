@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.myntra.com</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/png" href="/Common Files/image/favicon.png">
+    <!-- ALL CSS LINK -->
+    <link rel="stylesheet" href="/CommonFiles/style.css">
+
+    <link rel="stylesheet" href="boards.css">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="header.css">
+    <!-- FONT-AWESOME -->
+    <script src="https://kit.fontawesome.com/72215895a8.js" crossorigin="anonymous"></script>
+    <style>
+        #section_1 img {
+            width: unset;
+        }
+        ol > li > span {
+            color: #505050;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER MENU SECTION -->
+    <header>
+        <div id="logo">
+            <img src="/CommonFiles/image/myntra-removebg-preview.png" alt="brandLogo" id="landingPage" onclick="redirectToHomepage()">
+          </div>
+          
+          <script>
+            function redirectToHomepage() {
+              // Simulate an HTTP redirect
+              window.location.replace("/Landingpage/index.html");
+            }
+          </script>
+          
+        <ul id="nav_bar">
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="../Homepages/menHomePage.html">Men</a>
+                        <a href="../Homepages/womenHomePage.html">Women</a>
+                        <a href="#">Kids</a>
+                        <a href="../Homepages/homeLiving.html">Home & Living</a>
+                        <a href="#">Beauty</a>
+                        <a href="#">Studio</a>
+                    </div>
+                </li>
+                <li id="studio"><a href="../Hackerramp/LookBooks.html">Lookbooks</a><span>new</span></li>
+                <li id="studio"><a href="../Hackerramp/CommunityPage.html">StyleShows</a><span>new</span></li>
+                <li id="studio" class="dropdown">
+                    <a href="../Hackerramp/donation.html" class="dropbtn">Donations</a><span>new</span>
+                    <div class="dropdown-content">
+                        <a href="../Hackerramp/Upcycle.html">Upstyle</a>
+                        <a href="../Hackerramp/Recycle.html">Recycle</a>
+                    </div>
+                </li>
+
+
+
+        </ul> 
+        <div id="search">
+            <input type="text" id="search_bar" placeholder="Search for products">
+            <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+        </div>
+        <div id="right_icon">
+            <div id="reggDropdown">
+                <!-- DROPDOWN MENU TO BE CREATED FOR LOGIN AND SIGNUP -->
+              <div id="drop">
+                <a href="/myntra-master/Hackerramp/profile_boards.html" class="dropList">Community</a>
+
+                  <a href="/Profile/profile.html" class="dropList">login</a>
+                  <a href="/Profile/signup.html" class="dropList">sign up</a>
+              </div>
+
+              <i class="fa-regular fa-user"></i>
+              <span>profile</span>
+          </div>
+
+        
+            <div>
+                <i class="fa-regular fa-heart"></i>
+                <span>wishlist</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>bag</span>
+            </div>
+        </div>
+                   <!-- TOGGLE MENU -->
+                   <div id="toggle">
+                    <i class='bx bx-menu dropbtn' onclick="myFunction()"></i>
+                    <div id="myDropdown" class="dropdown-content">
+                        <div class="top">
+                            <a href="../Homepages/menHomePage.html">men</a>
+                            <a href="../Homepages/womenHomePage.html">women</a>
+                            <a href="#">kids</a>
+                            <a href="../Homepages/homeLiving.html">home & living</a>
+                            <a href="#">beauty</a>
+                            <a href="#">studio</a>
+                        </div>
+                        <div class="bottom">
+                            <i class="fa-regular fa-user fa_user" id="profile"></i>
+                            <i class="fa-regular fa-heart fa_wishlist"></i>
+                            <i class="fa fa-users"></i>
+                            <i class="fa-solid fa-bag-shopping fa_cart"></i>
+                        </div>               
+                    </div>
+                </div>
+
+    </header><br>
+
+    <div id="create-cards-button">
+        <button id="create-cards-button">CREATE YOUR OWN</button>
+    </div>
+    <h1><center>Dive into the fashion world with flair!</h1></center>
+    <h2><center>TOP LOOKBOOKS WEEKLY</center></h2><br>
+
+    <main>
+        <div class="grid">
+            <!-- Cards -->
+            <div class="card"><img src="dark academia fashion.png" alt="Image 1"><small>💌102.6k @yesha_19</small><p>Dark Academia</p></div>
+            <div class="card"><img src="sporty.jpg" alt="Image 1"><small>💌111.2k @keki</small><p>Sport Fits</p></div>
+            <div class="card"><img src="hipster.jpg" alt="Image 1"><br><br><br><small>💌103.9k @scoobie</small><p>Hispter Girly</p></div>
+            <div class="card"><img src="oldmoney.jpg" alt="Image 1"><br><br><br><br><br><br><small>💌100.6k @savage</small><p>Old Money</p></div>
+            <div class="card"><img src="business core.jpg" alt="Image 1"><small>💌90k @Karen</small><p>Business Women </p></div>
+            <div class="card"><img src="goblincore.jpg" alt="Image 1"><small>💌89 @jeremy</small><p>GoblinCore</p></div>
+            <div class="card"><img src="indie.jpg" alt="Image 1"><br><br><br><br><br><br><br><br><small>💌88.8k @lucky</small><p>IndieCore</p></div>
+            <div class="card"><img src="ghibli.png" alt="Image 1"><small>💌80.8k @kiki</small><p>Ghibli Girly</p></div>
+            <div class="card"><img src="softgirl.jpg" alt="Image 1"><small>💌80k @lucky</small><p>Soft Girl</p></div>
+        </div>
+    </main>
+<br>
+    <hr>
+<br><br>
+
+<h1>Explore Boards By Your Favourite Aesthetics</h1>
+    <div class="grid">
+        <div class="card"><img src="baddie.jpg"> </div>
+        <div class="card"><img src="cottagecore.jpg"> </div>
+        <div class="card"><img src="normcore.jpg"> </div>
+        <div class="card"><img src="vscogirl.jpg"> </div>
+        <div class="card"><img src="y2k.jpg"> </div>
+        <div class="card"><img src="l.jpg"> </div>
+
+    </div>
+
+   
+          <!-- FOOTER SECTION -->
+          <footer>
+            <section id="section_1">
+                <div id="left">
+                    <div>
+                        <h4>online shopping</h4>
+                        <p>men</p>
+                        <p>women</p>
+                        <p>home & living</p>
+                        <p>beauty</p>
+                        <p>gift cards</p>
+                        <p>myntra insider<span id="latest">New</span></p>
+                    </div>
+                    <div>
+                      <h4>useful links</h4>
+                      <p>men</p>
+                      <p>faq</p>
+                      <p>t&c</p>
+                      <p>terms of use</p>
+                      <p>track order</p>
+                      <p>shipping</p>
+                      <p>cancellation</p>
+                      <p>returns</p>
+                      <p>whitehat</p>
+                      <p>blog</p>
+                      <p>careers</p>
+                      <p>privacy policy</p>
+                      <p>site map</p>
+                      <p>corporate information</p>
+                    </div>
+                    <div>
+                        <h4>experience myntra app on mobile</h4>
+                        <img src="https://bit.ly/3LluZ4L" alt="android">
+                        <img src="https://bit.ly/3DmWQys" alt="ios">
+                        <h4 id="social_connect">keep in touch</h4>
+                        <div>
+                          <i class="fa-brands fa-facebook-square"></i>
+                          <i class="fa-brands fa-twitter-square"></i>
+                          <i class="fa-brands fa-youtube"></i>
+                          <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div id="right">
+                    <div>
+                        <img src="https://bit.ly/3JPiL47" alt="original">
+                        <p> <span>100% ORIGINAL</span> guarantee for all products at myntra.com</p>
+                    </div>
+                    <div>
+                        <img src="https://bit.ly/3uBalH4" alt="return_policy">
+                        <p><span>Return within 30days</span> of receiving your order</p>
+                    </div>
+                </div>
+            </section>
+            <section id="section_2">
+                <h4>popular searches</h4>
+                <div></div>
+            </section>
+            <section id="section_3">
+              <a href="">sherwani</a><a href="">track pants</a><a href="">blazzers</a><a href="">sweater</a><a href="">jeans</a><a href="">suit</a><a href="">trouser</a><a href="">shalwar</a><a href="">bracelets</a><a href="">sherwani</a><a href="">cargo</a><a href="">shirt</a><a href="">sherwani</a><a href="">shelwar</a><a href="">Bracelets</a><a href="">sherwani</a><a href="">blazzers</a><a href="">sherwani</a><a href="">bracelets</a><a href="">rings</a><a href="">blazzers</a><a href="">sherwani</a><a href="">sherwani</a><a href="">sherwani</a><a href="">blazzers</a><a href="">blazzers</a><a href="">blazzers</a><a href="">shelwar</a><a href="">shalwar</a><a href="">jeans</a>
+            </section>
+            <section id="section_4">
+                <p>In case of any concern <a href="#"> contact us</a></p>
+                <p>&#169; 2022 www.myntra.com. All rights reserved.</p>
+            </section>
+            <hr>
+           <section id="section_5">
+               <h4>men's shopping at myntra: a superior experience</h4>
+               <p>Myntra is one of the best sites when it comes to online shopping for men. The finest of material, superior design and unbeatable style go into the making of our men’s shopping collection. Our range of online shopping men’s wear, accessories, footwear and personal care products are second to none. Compared with other men’s shopping sites, Myntra brings you the best price products which won’t hurt your pocket. With seasonal discounts on trendy casual wear, suits, blazers, sneakers and more, online shopping for men at Myntra just gets even more irresistible!
+              </p>
+           </section>
+           <section id="section_6">
+               <h4>online shopping for men: options unlimited</h4>
+               <p>At Myntra, our online shopping fashion for men collection features plenty of options to create multiple outfits. At our men’s online shop we have brought together an exhaustive range of products from the best men’s brands. Here is a list of must-haves from the wide variety of awesome products at Myntra:</p>
+               <div>
+               <ol>
+                   <li> <span> Smart men’s clothing </span> - At Myntra you will find myriad options in smart formal shirts and trousers, cool T-shirts and jeans, or kurta and pyjama combinations for men. Wear your attitude with printed T-shirts. Create the back-to-campus vibe with varsity T-shirts and distressed jeans. Be it gingham, buffalo, or window-pane style, checked shirts are unbeatably smart. Team them up with chinos, cuffed jeans or cropped trousers for a smart casual look. Opt for a stylish layered look with biker jackets. Head out in cloudy weather with courage in water-resistant jackets. Browse through our innerwear section to find supportive garments which would keep you confident in any outfit.</li>
+                   <li> <span> Trendy women’s clothing </span>- Online shopping for women at Myntra is a mood-elevating experience. Look hip and stay comfortable with chinos and printed shorts this summer. Look hot on your date dressed in a little black dress, or opt for red dresses for a sassy vibe. Striped dresses and T-shirts represent the classic spirit of nautical fashion. Choose your favourites from among Bardot, off-shoulder, shirt-style, blouson, embroidered and peplum tops, to name a few. Team them up with skinny-fit jeans, skirts or palazzos. Kurtis and jeans make the perfect fusion-wear combination for the cool urbanite. Our grand sarees and lehenga-choli selections are perfect to make an impression at big social events such as weddings. Our salwar-kameez sets, kurtas and Patiala suits make comfortable options for regular wear.
+
+                  </li>
+                   <li> <span> Fashionable footwear </span> - While clothes maketh the man, the type of footwear you wear reflects your personality. We bring you an exhaustive lineup of options in casual shoes for men, such as sneakers and loafers. Make a power statement at work dressed in brogues and oxfords. Practice for your marathon with running shoes for men and women. Choose shoes for individual games such as tennis, football, basketball, and the like. Or step into the casual style and comfort offered by sandals, sliders, and flip-flops. Explore our lineup of fashionable footwear for ladies, including pumps, heeled boots, wedge-heels, and pencil-heels. Or enjoy the best of comfort and style with embellished and metallic flats.
+                </li>
+               </ol>
+              </div>
+               <p>Make sure you check out fun printed men’s T-shirts featuring your favourite characters from DC Comics and Marvel studios. Relive the magic of your favourite superhero from Justice League. Fly high with Superman, battle the bad guys with Batman, or get trendy in lightning-speed with a Flash T-shirt. Grab our cool Marvel Avengers T-shirts. Stay powered up with the Iron Man, or walk with the warriors in a Thor T-shirt.</p>
+               <p>Our online shopping fashion for mens collection includes even more amazing merchandise such as innerwear, sleepwear, track pants, personal care, wallets, belts and other fashion accessories.</p>
+           </section>
+           <section id="section_6">
+               <h4>men's shopping made easy at myntra</h4>
+               <p>Myntra is the most convenient men’s online store, what with our simplified shopping and payment procedures. With just a few clicks of the mouse or taps on your smartphone, you can buy your favorites from the best men’s brands right away.</p>
+           </section>
+        </footer>
+</body>
+<script>
+    function redirectToLandingPage() {
+    window.location.href = "../Landingpage/index.html";
+}
+
+</script>
+</html>
+<script src="deals.js"></script>
+<script src="/Common Files/headerMenu.js"></script>
+<script src="/Common Files/corousel.js"></script>
+<script src="../Common Files/hyperlinks.js"></script>

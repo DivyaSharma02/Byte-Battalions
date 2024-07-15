@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra Upcycle</title>
+     <!-- FAVICON -->
+     <link rel="shortcut icon" type="image/png" href="/Common Files/image/favicon.png">
+     <!-- ALL CSS LINK -->
+     <link rel="stylesheet" href="/CommonFiles/style.css">
+ 
+     <link rel="stylesheet" href="boards.css">
+     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="navbar.css">
+     <link rel="stylesheet" href="header.css">
+     <!-- FONT-AWESOME -->
+     <script src="https://kit.fontawesome.com/72215895a8.js" crossorigin="anonymous"></script>
+     <style>
+     body {
+        background-image: url('eco.jpg');
+
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+    }
+    
+
+    h1 {
+        background-color: #f8f8f8;
+        margin: 0;
+    }
+    
+    section {
+        padding: 2em;
+        background-color: white;
+        margin: 1em auto;
+        max-width: 800px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+    
+    h2 {
+        margin-top: 0;
+    }
+
+    li{
+        color: black;
+    }
+    
+    ol {
+        padding-left: 1.5em;
+    }
+    
+    .faq {
+        margin-top: 1em;
+    }
+    
+    .faq h3 {
+        margin: 0.5em 0;
+        font-size: 1.1em;
+    }
+    
+    .faq p {
+        margin: 0;
+    }
+</style>
+</head>
+<body>
+    
+    <!-- HEADER MENU SECTION -->
+    <header>
+        <div id="logo">
+            <img src="/CommonFiles/image/myntra-removebg-preview.png" alt="brandLogo" id="landingPage" onclick="redirectToHomepage()">
+          </div>
+          
+          <script>
+            function redirectToHomepage() {
+              // Simulate an HTTP redirect
+              window.location.replace("/Landingpage/index.html");
+            }
+          </script>
+          
+        <ul id="nav_bar">
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="../Homepages/menHomePage.html">Men</a>
+                        <a href="../Homepages/womenHomePage.html">Women</a>
+                        <a href="#">Kids</a>
+                        <a href="../Homepages/homeLiving.html">Home & Living</a>
+                        <a href="#">Beauty</a>
+                        <a href="#">Studio</a>
+                    </div>
+                </li>
+            <li id="studio"><a href="../Hackerramp/LookBooks.html">Lookbooks</a><span>new</span></li>
+            <li id="studio"><a href="../Hackerramp/LookBooks.html">StyleShows</a><span>new</span></li>
+                <li id="studio" class="dropdown">
+                    <a href="#" class="dropbtn">Donations</a> 
+                    <div class="dropdown-content">
+                        <a href="#">Upstyle</a>
+                        <a href="#">Recycle</a>
+                    </div>
+                    <span>new</span>
+                </li>
+            </li>
+
+
+
+        </ul> 
+        <div id="search">
+            <input type="text" id="search_bar" placeholder="Search for products">
+            <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+        </div>
+        <div id="right_icon">
+            <div id="reggDropdown">
+                <!-- DROPDOWN MENU TO BE CREATED FOR LOGIN AND SIGNUP -->
+              <div id="drop">
+                  <a href="/Profile/profile.html" class="dropList">login</a>
+                  <a href="/Profile/signup.html" class="dropList">sign up</a>
+              </div>
+
+              <i class="fa-regular fa-user"></i>
+              <span>profile</span>
+          </div>
+
+        
+            <div>
+                <i class="fa-regular fa-heart"></i>
+                <span>wishlist</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>bag</span>
+            </div>
+        </div>
+                   <!-- TOGGLE MENU -->
+                   <div id="toggle">
+                    <i class='bx bx-menu dropbtn' onclick="myFunction()"></i>
+                    <div id="myDropdown" class="dropdown-content">
+                        <div class="top">
+                            <a href="../Homepages/menHomePage.html">men</a>
+                            <a href="../Homepages/womenHomePage.html">women</a>
+                            <a href="#">kids</a>
+                            <a href="../Homepages/homeLiving.html">home & living</a>
+                            <a href="#">beauty</a>
+                            <a href="#">studio</a>
+                        </div>
+                        <div class="bottom">
+                            <i class="fa-regular fa-user fa_user" id="profile"></i>
+                            <i class="fa-regular fa-heart fa_wishlist"></i>
+                            <i class="fa fa-users"></i>
+                            <i class="fa-solid fa-bag-shopping fa_cart"></i>
+                        </div>               
+                    </div>
+                </div>
+
+    </header><br>
+
+        <h1>Myntra Recycle</h1>
+    <section>
+        <center><a href="donation.html"><u>DONATE NOW!</u></a></center><br>
+
+        <h2>What is Recycling?</h2>
+        <p>Recycling involves giving donated clothes to organizations that specialize in recycling fabrics. This helps reduce waste and promotes sustainable practices.</p>
+    </section>
+    <section>
+        <h2>How It Works</h2>
+        <ol>
+            <li>Collection: We collect donated clothes from customers.</li>
+            <li>Partnership: We partner with recycling organizations.</li>
+            <li>Recycling: The clothes are recycled into new fabrics and materials.</li>
+        </ol>
+    </section>
+    <section>
+        <h2>FAQs</h2>
+        <div class="faq">
+            <h3>What types of clothes can be recycled?</h3>
+            <p>We accept all types of clothing items, regardless of their condition.</p>
+        </div>
+        <div class="faq">
+            <h3>What happens to the recycled materials?</h3>
+            <p>The recycled materials are used to create new fabrics and other products, promoting a circular economy.</p>
+        </div>
+        <div class="faq">
+            <h3>How can I contribute to recycling?</h3>
+            <p>You can donate your old clothes at our designated collection points or through our pick-up service.</p>
+        </div>
+    </section>
+</body>
+<script>
+    function redirectToLandingPage() {
+    window.location.href = "../Landingpage/index.html";
+}
+
+</script>
+</html>

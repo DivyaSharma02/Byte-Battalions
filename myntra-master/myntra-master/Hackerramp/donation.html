@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.myntra.com</title>
+    <link rel="shortcut icon" type="image/png" href="/Common Files/image/favicon.png">
+    <link rel="stylesheet" href="/CommonFiles/style.css">
+    <link rel="stylesheet" href="boards.css">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="header.css">
+    <script src="https://kit.fontawesome.com/72215895a8.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            font-size: 200%;
+            margin: 0;
+            padding: 50px;
+            background-image: url("eco.jpg");
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input, textarea, select {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            margin-top: 20px;
+            background-color: #df5da4;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 10px 20px;
+        }
+        input[type="submit"]:hover {
+            background-color: #ca2c8b;
+        }
+        h1{
+            text-align: center;
+            color:#073720;
+            font-size: 200%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="/CommonFiles/image/myntra-removebg-preview.png" alt="brandLogo" id="landingPage" onclick="redirectToHomepage()">
+        </div>
+        <script>
+            function redirectToHomepage() {
+                window.location.replace("/Landingpage/index.html");
+            }
+        </script>
+        <ul id="nav_bar">
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Categories</a>
+                <div class="dropdown-content">
+                    <a href="../Homepages/menHomePage.html">Men</a>
+                    <a href="../Homepages/womenHomePage.html">Women</a>
+                    <a href="#">Kids</a>
+                    <a href="../Homepages/homeLiving.html">Home & Living</a>
+                    <a href="#">Beauty</a>
+                    <a href="#">Studio</a>
+                </div>
+            </li>
+            <li id="studio"><a href="../Hackerramp/LookBooks.html">Lookbooks</a><span>new</span></li>
+            <li id="studio"><a href="../Hackerramp/CommunityPage.html">StyleShows</a><span>new</span></li>
+            <li id="studio" class="dropdown">
+                <a href="../Hackerramp/donation.html" class="dropbtn">Donations</a><span>new</span>
+                <div class="dropdown-content">
+                    <a href="../Hackerramp/Upcycle.html">Upstyle</a>
+                    <a href="../Hackerramp/Recycle.html">Recycle</a>
+                </div>
+            </li>
+        </ul> 
+        <div id="search">
+            <input type="text" id="search_bar" placeholder="Search for products">
+            <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+        </div>
+        <div id="right_icon">
+            <div id="reggDropdown">
+                <div id="drop">
+                    <a href="/Profile/profile.html" class="dropList">login</a>
+                    <a href="/Profile/signup.html" class="dropList">sign up</a>
+                </div>
+                <i class="fa-regular fa-user"></i>
+                <span>profile</span>
+            </div>
+            <div>
+                <i class="fa-regular fa-heart"></i>
+                <span>wishlist</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>bag</span>
+            </div>
+        </div>
+        <div id="toggle">
+            <i class='bx bx-menu dropbtn' onclick="myFunction()"></i>
+            <div id="myDropdown" class="dropdown-content">
+                <div class="top">
+                    <a href="../Homepages/menHomePage.html">men</a>
+                    <a href="../Homepages/womenHomePage.html">women</a>
+                    <a href="#">kids</a>
+                    <a href="../Homepages/homeLiving.html">home & living</a>
+                    <a href="#">beauty</a>
+                    <a href="#">studio</a>
+                </div>
+                <div class="bottom">
+                    <i class="fa-regular fa-user fa_user" id="profile"></i>
+                    <i class="fa-regular fa-heart fa_wishlist"></i>
+                    <i class="fa fa-users"></i>
+                    <i class="fa-solid fa-bag-shopping fa_cart"></i>
+                </div>               
+            </div>
+        </div>
+    </header><br>
+    <div class="container">
+        <h1>DONATIONS</h1>
+        <form action="submit.html" onsubmit="return validateForm()">
+            <label for="clothing-type">Type of Clothing Items:</label>
+            <input type="text" id="clothing-type" name="clothing_type" required>
+            <label for="quantity">Quantity of Items:</label>
+            <input type="number" id="quantity" name="quantity" required>
+            <label for="condition">Condition of Items:</label>
+            <select id="condition" name="condition" required>
+                <option value="new">New</option>
+                <option value="gently-used">Gently Used</option>
+                <option value="worn">Worn</option>
+            </select>
+            <label for="washed-clean">Are the clothes washed and clean?</label>
+            <select id="washed-clean" name="washed_clean" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <label for="defects">Any defects or damages:</label>
+            <textarea id="defects" name="defects"></textarea>
+            <label for="brands">Specific Brands or Types of Clothing:</label>
+            <textarea id="brands" name="brands"></textarea>
+            <label for="special-instructions">Special Instructions:</label>
+            <textarea id="special-instructions" name="special_instructions"></textarea>
+            <label for="special-handling">Any items that require special handling?</label>
+            <textarea id="special-handling" name="special_handling"></textarea>
+            <label for="myntra-bill">Upload Myntra Bill or Screenshot:</label>
+            <input type="file" id="myntra-bill" name="myntra_bill" accept="image/*,application/pdf">
+            <label for="pickup-date">Preferred Pick-up Date and Time:</label>
+            <input type="datetime-local" id="pickup-date" name="pickup_date" required>
+            <label for="address">Address for Pick-up:</label>
+            <textarea id="address" name="address" required></textarea>
+            <input type="submit" value="Submit Donation">
+        </form>
+    </div>
+    <script>
+        function validateForm() {
+            const clothingType = document.getElementById('clothing-type').value;
+            const quantity = document.getElementById('quantity').value;
+            const condition = document.getElementById('condition').value;
+            const washedClean = document.getElementById('washed-clean').value;
+            const pickupDate = document.getElementById('pickup-date').value;
+            const address = document.getElementById('address').value;
+
+            if (!clothingType || !quantity || !condition || !washedClean || !pickupDate || !address) {
+                alert('Please fill out all required fields.');
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>

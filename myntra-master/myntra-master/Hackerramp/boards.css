@@ -1,0 +1,101 @@
+
+#create-cards-button {
+    /* Button styling */
+    background-color: #584d56;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0px 30px ;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    right: 20px;
+    bottom: 65%;
+    box-shadow: none;
+    outline: none;
+    background-color: rgb(1, 1, 1);
+}
+
+#create-cards-button:hover {
+    background-color: pink;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20rem;
+    padding: 20px;
+    margin: 5%;
+}
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+.card p {
+    padding: 1rem;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+.card small {
+    display: block;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #888;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+h1, h2 {
+    text-align: center;
+    color: #2F0A28;
+}
+h1 {
+    padding: 50px;
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+hr {
+    width: 80%;
+    margin: 20px auto;
+    border: 0;
+    border-top: 2px solid pink;
+}
+.explore {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    width: 90%;
+    margin: 0 auto;
+}
+.explore .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #555;
+    background-color: #f5f5f5;
+    height: 150px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.explore .card:hover {
+    background-color: #eaeaea;
+    transform: scale(1.05);
+}
